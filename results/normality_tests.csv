@@ -1,0 +1,6 @@
+"data","Test","Statistic","p.value"
+"9 tenors","Mardia Skewness",337.125,"<0.001"
+"9 tenors","Mardia Kurtosis",8.844,"<0.001"
+"9 tenors","Henze-Zirkler",1.099,"<0.001"
+"3 factors","Mardia Skewness",18.987,"0.04"
+"3 factors","Mardia Kurtosis",4.371,"<0.001"

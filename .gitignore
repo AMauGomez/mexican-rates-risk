@@ -1,0 +1,10 @@
+.Rhistory
+.RData
+.Rproj.user/
+*_files/
+.env
+*.rds
+!docs/
+!docs/**
+
+/.quarto/
