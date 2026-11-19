@@ -2,7 +2,7 @@
 
 **What moves the Mexican yield curve, whether its moves are normal, and which Value-at-Risk model survives ten years of out-of-sample backtesting on the peso.**
 
-📊 [Full report](https://amaugomez.github.io/mexico-rates-risk/) · R (mclust, MVN, rugarch) · Data: [Banco de México, SIE](https://www.banxico.org.mx/SieAPIRest/service/v1)
+📊 [Full report](https://amaugomez.github.io/mexican-rates-risk/) · R (mclust, MVN, rugarch) · Data: [Banco de México, SIE](https://www.banxico.org.mx/SieAPIRest/service/v1)
 
 ---
 

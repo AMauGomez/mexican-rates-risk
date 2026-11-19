@@ -26,7 +26,7 @@ top <- ry[order(-ry$stress_share), ][1:3, ]
 stress <- rc[rc$regime == "Stress", ]
 ```
 
-**November 2026** · R (mclust, MVN, rugarch) · [Code](https://github.com/AMauGomez/mexico-rates-risk) · Data: [Banco de México, Sistema de Información Económica (SIE)](https://www.banxico.org.mx/SieAPIRest/service/v1)
+**November 2026** · R (mclust, MVN, rugarch) · [Code](https://github.com/AMauGomez/mexican-rates-risk) · Data: [Banco de México, Sistema de Información Económica (SIE)](https://www.banxico.org.mx/SieAPIRest/service/v1)
 
 ::: {.callout-note appearance="minimal"}
 **In one paragraph.** Three factors (level, slope and curvature) explain `r pct(cs$share_change_1 + cs$share_change_2 + cs$share_change_3)`% of how the Mexican government yield curve moves from quarter to quarter. Those moves are not multivariate normal: their tails are heavier. Daily moves of the peso are far from normal too (excess kurtosis `r f2(fx$excess_kurtosis, 1)`), and their volatility comes in waves. Over `r format(bgt$days, big.mark = ",")` trading days of out-of-sample backtesting (2016–2026), only a **GARCH(1,1) model with Student-t errors** produces a 99% Value at Risk with the right number of exceptions, spread over time as they should be. A normal model, the kind still found in simple risk reports, was breached `r bno$exceptions` times instead of `r round(bno$expected)`.
